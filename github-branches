@@ -1,6 +1,7 @@
 PS C:\Users\Hp> cd $HOME\simple-interest-calculator
 PS C:\Users\Hp\simple-interest-calculator> git branch -a
 
+  bug-fix-revert
   bug-fix-typo
 * main
   remotes/origin/HEAD -> origin/main
@@ -9,7 +10,7 @@ PS C:\Users\Hp\simple-interest-calculator> git branch -a
 PS C:\Users\Hp\simple-interest-calculator> git status
 
 On branch main
-Your branch is ahead of 'origin/main' by 1 commit.
+Your branch is ahead of 'origin/main' by 2 commits.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
