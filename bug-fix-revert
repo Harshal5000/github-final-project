@@ -1,0 +1,17 @@
+Command 1:
+curl.exe -s https://api.github.com/repos/Harshal5000/mcino-Introduction-to-Git-and-GitHub/pulls/1 | ConvertFrom-Json | Select-Object number, state, @{Name="head_repo";Expression={$_.head.repo.full_name}}, @{Name="head_branch";Expression={$_.head.ref}}, @{Name="forked_from";Expression={$_.head.repo.parent.full_name}}
+
+Terminal Output:
+number      : 1
+state       : open
+head_repo   : Harshal5000/mcino-Introduction-to-Git-and-GitHub
+head_branch : bug-fix-revert
+forked_from :
+
+Command 2:
+curl.exe -s https://api.github.com/repos/Harshal5000/mcino-Introduction-to-Git-and-GitHub | ConvertFrom-Json | Select-Object full_name, fork, @{Name="parent";Expression={$_.parent.full_name}}
+
+Terminal Output:
+full_name : Harshal5000/mcino-Introduction-to-Git-and-GitHub
+fork      : True
+parent    : ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
